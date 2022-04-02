@@ -17,7 +17,7 @@ python3 -m demure_captcha --length 10 --useIntegers True --width 300 --height 30
 # Base64 strings
 >>>{ "mp3": "rewwgwrrrwggrwrg...", "png": "wfweewggewegwg..." }
 ```
-#### Pathkage
+#### Pakage
 ```python
 from demure_captcha import generate
 
