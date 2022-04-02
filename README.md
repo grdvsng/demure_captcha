@@ -29,4 +29,3 @@ print( captcha.save( 'tmp/captcha' ) )
 ```
 # Example captcha
 ![png](example-captcha.png)
-![mp3](example-captcha.mp3)
