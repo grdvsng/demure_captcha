@@ -27,3 +27,5 @@ captcha.image.show( )
 print( captcha.save( ) )
 print( captcha.save( 'tmp/captcha' ) )
 ```
+# Example captcha
+![alt text](example-captcha.png)

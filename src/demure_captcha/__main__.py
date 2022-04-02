@@ -1,10 +1,7 @@
-from os      import path as os_path
-from sys     import path as sys_path
-from pathlib import Path
+import sys
+import pathlib
 
-ROOT_DIR = os_path.join( str( Path( __file__ ).parent ), 'bin' )
-
-sys_path.append( ROOT_DIR )
+sys.path.append( str( pathlib.Path( __file__ ).parent ) )
 
 import argparse
 import uuid
@@ -12,8 +9,8 @@ import json
 import tempfile
 
 from os          import path as os_path
-from bin.captcha import Captcha, generate
-from bin.themes  import THEMES
+from captcha import Captcha, generate
+from themes  import THEMES
 from typing      import Literal
 
 

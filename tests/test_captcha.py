@@ -5,7 +5,7 @@ from sys     import path as sys_path
 from pathlib import Path
 from PIL     import Image
 
-ROOT_DIR = os_path.join(  str( Path( __file__ ).parent.parent ), 'src', 'bin' )
+ROOT_DIR = os_path.join(  str( Path( __file__ ).parent.parent ), 'src', 'demure_captcha' )
 
 sys_path.append( ROOT_DIR )
 

@@ -1,3 +1,4 @@
+import glob
 import setuptools
 
 with open( "README.md", "r", encoding="utf-8" ) as fh:
@@ -8,9 +9,10 @@ with open( "requirements.txt", "r", encoding="utf-8" ) as fh:
 
 packages = setuptools.find_packages(where='./src')
 
+print( 'fonts', glob.glob( './src/*/fonts/files/*.otf' ) )
 setuptools.setup(
     name                         = "demure_captcha",
-    versio                       = "0.8.1",
+    version                      = "0.8.1",
     author                       = "Trishkin Sergey",
     author_email                 = "grdvsng@gmail.com",
     description                  = "Simple but customize captcha generator( image + voice )",
@@ -22,6 +24,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3.8',
         "License :: OSI Approved :: MIT License",
     ],
+    data_files                   = [ ( 'fonts/files', glob.glob( './src/*/fonts/files/*.otf' ) ) ],
+        include_package_data=True,
     install_requires             = install_requires,
     package_dir                  = { "": "src" },
     packages                     = packages,
