@@ -28,5 +28,5 @@ print( captcha.save( ) )
 print( captcha.save( 'tmp/captcha' ) )
 ```
 # Example captcha
-[mp3](example-captcha.mp3)
+![mp3](example-captcha.mp3)
 ![png](example-captcha.png)

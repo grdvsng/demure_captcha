@@ -22,7 +22,7 @@ setuptools.setup(
     project_urls                 = { },
     classifiers                  = [
         'Programming Language :: Python :: 3.8',
-        "License :: GPL 3.0",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     ],
     data_files                   = [ ( 'fonts/files', glob.glob( './src/*/fonts/files/*.otf' ) ) ],
         include_package_data=True,
